@@ -3,20 +3,23 @@ import ReactDOM from 'react-dom';
 import {createStore, applyMiddleware, compose} from 'redux'
 // import './index.css';
 import thunk from 'redux-thunk'
-import {provider} from 'react-redux'
+import { Provider } from 'react-redux'
+import houseReducer from './reducers/houseReducer'
+
+
 import App from './App';
 
  const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 
-let reducer = ''
+// let reducer = ''
 
-let store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)))
+let store = createStore(houseReducer, composeEnhancers(applyMiddleware(thunk)))
 
 ReactDOM.render(
-    <provider store={store}> 
+    <Provider store={store}> 
      <App />
-    </provider>
+    </Provider>
 
 
 ,document.getElementById('root'));
