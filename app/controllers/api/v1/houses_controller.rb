@@ -29,7 +29,7 @@ class  Api::V1::HousesController < ApplicationController
 
     private
     def house_params
-        params.require(:house).permit(:address)
+        params.require(:house).permit(:house_address)
     end 
 
 end
