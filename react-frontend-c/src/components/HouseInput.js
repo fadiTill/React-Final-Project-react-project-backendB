@@ -17,6 +17,9 @@ handleChange = (event) => {
 handleSubmit = (event) => {
     event.preventDefault()
     this.props.addHouse(this.state)
+    this.setState ({
+        house_address:''
+    })
 }
 
 render() {
