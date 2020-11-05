@@ -17,7 +17,7 @@ render() {
 
     return (
     <div> 
-<HouseInput/>
+<HouseInput/> <br></br>
  <Houses houses={this.props.houses}/>
     </div>
 
