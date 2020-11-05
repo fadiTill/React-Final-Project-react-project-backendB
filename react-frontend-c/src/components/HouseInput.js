@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addHouse} from '../actions/addHouse'
+
 class HouseInput extends React.Component {
 
 state = {
