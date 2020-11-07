@@ -8,5 +8,5 @@
 
 
 house = House.create(house_address: "testhouseadress")
-guest = Guest.create(name: "nametest", phone_number: "phonenumbertest",guest_address: "guestsaddresstest",email: "emailtest",time_line:"timelinetest", comment:"commenttest", house_id:2)
-guest_two = Guest.create(name: "nametestwo", phone_number: "phonenumbertestwo",guest_address: "guestsaddresstesttwo",email: "emailtesttwo",time_line:"timelinetesttwo", comment:"commenttesttwo", house_id:3)
+guest = Guest.create(name: "nametest", phone_number: "phonenumbertest", guest_address: "guestsaddresstest",email: "emailtest",time_line:"timelinetest", comment:"commenttest", house_id:2)
+guest_two = Guest.create(name: "nametestwo", phone_number: "phonenumbertestwo", guest_address: "guestsaddresstesttwo",email: "emailtesttwo",time_line:"timelinetesttwo", comment:"commenttesttwo", house_id:3)

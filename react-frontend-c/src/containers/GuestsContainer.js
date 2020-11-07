@@ -1,8 +1,7 @@
 import React from 'react'
-import Guests from '../components/Guests'
-// import Guest from '../components/Guest'
 import GuestInput from '../components/GuestInput'
-import houseReducer from '../reducers/houseReducer'
+import Guests from '../components/Guests'
+
 
 
 class GuestsContainer extends React.Component {
@@ -10,10 +9,11 @@ class GuestsContainer extends React.Component {
 
 
 render() {
+    console.log('Guests')
     return (
         <div> 
-        <GuestInput/>
-        <Guests guest={this.props.house && this.props.house.guests}/>
+        <GuestInput house={this.props.house}/>
+        <Guests guests={ this.props.house.guests}/>
         </div>  
     )
     }

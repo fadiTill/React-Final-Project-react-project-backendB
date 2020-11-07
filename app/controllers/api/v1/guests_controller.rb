@@ -14,7 +14,10 @@ class Api::V1::GuestsController < ApplicationController
          @house = House.find(params[:house_id])
         @guest = @house.guests.create(guest_params)
         if @guest.save
-            render json: @guest
+            # render json: @guest
+            # for  House Reducer 
+            render json: @house
+          
         else
             render json: {error: 'Error creating guest'}
      end 
@@ -53,6 +56,6 @@ class Api::V1::GuestsController < ApplicationController
 
 
     def guest_params
-        params.require(:guest).permit(:name, :phone_number, :guest_address, :email, :time_line, :house_id) 
+        params.require(:guest).permit(:name, :phone_number, :guest_address, :email, :time_line, :comment, :house_id) 
     end 
 end

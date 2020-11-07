@@ -6,7 +6,22 @@ export default function houseReducer(state = {houses: []}, action) {
         return {houses:action.payload}
         case 'ADD_HOUSE':
         return {...state, houses: [...state.houses, action.payload]}
- default:
-    return state
+//  default:
+//     return state
+
+    //to avoid clone in the array, we look if  house object is uniq ?
+    case 'ADD_GUEST':
+        let houses = state.houses.map(house =>{
+            if (house.id == action.payload.id) {
+                return action.payload
+            } else {
+                return house
+            }
+        })
+        return {...state, houses: houses}
+        default:
+            return state
     }
+
+
 }
