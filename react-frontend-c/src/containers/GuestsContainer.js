@@ -13,7 +13,7 @@ render() {
     return (
         <div> 
         <GuestInput house={this.props.house}/>
-        <Guests guests={ this.props.house.guests}/>
+        <Guests guests={this.props.house && this.props.house.guests}/>
         </div>  
     )
     }
