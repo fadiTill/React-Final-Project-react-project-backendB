@@ -47,6 +47,7 @@ render() {
   return (
 <div>
   <form onSubmit={this.handleSubmit}>
+    
     <label>Timeline:</label>
     <select name="time_line" value={this.state.time_line} onChange={this.handleChange}>
       <option>year</option>

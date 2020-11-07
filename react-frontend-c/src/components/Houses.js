@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route,Link} from 'react-router-dom'
+import {Route, Link} from 'react-router-dom'
 import House from './House'
 
 const Houses = (props) => {
@@ -8,7 +8,7 @@ const Houses = (props) => {
         <div> 
         {props.houses.map(house => 
         <li key={house.id}>
-        <Link to={`/houses/${house.id}`}> {house.house_address}</Link>
+        <Link to={`/houses/${house.id}`}>{house.house_address}</Link>
         </li>)} 
            </div>
              )
