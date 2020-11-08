@@ -1,5 +1,5 @@
 class Api::V1::GuestsController < ApplicationController
-# before_action :set_house
+ before_action :set_house
 require 'pry'
 
 
@@ -19,7 +19,7 @@ require 'pry'
 
 
     def create
-         binding.pry
+        #   binding.pry
          @house = House.find(params[:house_id])
          @guest = @house.guests.create(guest_params)
         if @guest.save
@@ -37,7 +37,7 @@ require 'pry'
 
 
     def destroy
-        # binding.pry
+        #  binding.pry
         # @house = House.find(params[:house_id])
         # @guest = @house.guests.find(params[id])
         # @guest.destroy
@@ -45,7 +45,7 @@ require 'pry'
         @guest = Guest.find(params["id"])
         @house = House.find(@guest.house_id)
         @guest.destroy
-        render json: @House
+        render json: @house
     end 
 
 
@@ -62,9 +62,9 @@ require 'pry'
 
     private
 
-    # def set_house
-    #     @house = House.find(params[:house_id])
-    # end
+    def set_house
+        @house = House.find(params[:house_id])
+    end
 
 
     def guest_params

@@ -11,7 +11,7 @@ class  Api::V1::HousesController < ApplicationController
         if @house.save
             render json: @house
         else
-            render json: {error: 'Error creating account'}
+            render json: {error: 'Error creating house'}
      end 
     end
 

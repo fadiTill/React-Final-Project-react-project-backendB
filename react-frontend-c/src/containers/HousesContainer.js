@@ -21,7 +21,7 @@ render() {
       <Switch>
       <Route path='/houses/new' component={HouseInput}/>
       <Route   path='/houses/:id'render={(routerProps)=> <House {...routerProps} houses={this.props.houses}/>}/>
-      <Route exact path='/houses'render={(routerProps)=> <Houses  {...routerProps} houses={this.props.houses}/>} />
+      <Route  path='/houses'render={(routerProps)=> <Houses  {...routerProps} houses={this.props.houses}/>}/>
       </Switch>  
     </div>
 
