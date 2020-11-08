@@ -5,8 +5,8 @@ import GuestsContainer from '../containers/GuestsContainer'
 
 const House = (props) => {
 
-  // let house = props.houses[props.match.params.id - 1]
-  let house = props.houses.filter(house => house.id == props.match.params.id)[0]
+   let house = props.houses[props.match.params.id - 1]
+  // let house = props.houses.filter(house => house.id === props.match.params.id)[0]
  console.log(house)
     return (
         <div>
