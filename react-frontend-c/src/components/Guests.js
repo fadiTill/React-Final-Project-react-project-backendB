@@ -20,6 +20,10 @@ const Guests = (props) => {
     props.deleteGuest(guest.id, guest.house_id)
 }
 
+
+  
+
+
     return (
         <div> 
         {props.guests && props.guests.map(guest =>

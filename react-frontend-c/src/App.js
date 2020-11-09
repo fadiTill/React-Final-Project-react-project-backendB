@@ -1,6 +1,5 @@
 import React from 'react';
-// import {connect} from 'react-redux'
-//  import {fetchHouses } from './actions/fetchHouses';
+import MyHeader from './components/MyHeader';
 import HousesContainer from './containers/HousesContainer'
 
 
@@ -19,6 +18,9 @@ class  App extends React.Component {
   render() {
   return (
     <div className="App">
+      <header className="App-header">
+      <MyHeader/>
+      </header>
       <HousesContainer/>
     </div>
   );

@@ -2,7 +2,6 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {addGuest} from '../actions/addGuest'
 
-
 // t.string "name"
 // t.string "phone_number"
 // t.string "guest_address"
@@ -47,7 +46,6 @@ render() {
   return (
 <div>
   <form onSubmit={this.handleSubmit}>
-    
     <label>Timeline:</label>
     <select name="time_line" value={this.state.time_line} onChange={this.handleChange}>
       <option>year</option>
@@ -55,18 +53,20 @@ render() {
       <option>now</option>
       <option>long term</option>
     </select>
-
+    <span> </span>
     <label>name:</label>
-  <input type="string" name="name" value={this.state.name} onChange={this.handleChange}/>
+    <input type="string" name="name" value={this.state.name} onChange={this.handleChange}/>
+    <span> </span>
     <label>phone number:</label>
-    <input type="string" name="phone_number" value={this.state.phone_number}onChange={this.handleChange}/>
-    <label>guest address:</label>
-    <input type="string"name="guest_address"value={this.state.guest_address}onChange={this.handleChange}/>
+    <input type="string" name="phone_number" value={this.state.phone_number} onChange={this.handleChange}/>
+    <label>address:</label>
+    <input type="string" name="guest_address" value={this.state.guest_address} onChange={this.handleChange}/>
     <label>email:</label>
-    <input type="string"name="email"value={this.state.email}onChange={this.handleChange}/>
+    <input type="string" name="email" value={this.state.email} onChange={this.handleChange}/>
     <label>comment:</label>
-    <input type="string"name="comment"value={this.state.comment}onChange={this.handleChange}/>
+    <input type="string" name="comment" value={this.state.comment} onChange={this.handleChange}/>
     <input type="submit"/>
+    
   </form>
 </div>
   )  
