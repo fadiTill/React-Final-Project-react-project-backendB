@@ -19,12 +19,9 @@ require 'pry'
 
 
     def create
-        #   binding.pry
          @house = House.find(params[:house_id])
          @guest = @house.guests.create(guest_params)
         if @guest.save
-            # render json: @guest
-            # for  House Reducer 
             render json: @house
           
         else
