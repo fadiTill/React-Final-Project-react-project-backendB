@@ -13,7 +13,7 @@ import {deleteGuest} from '../actions/deleteGuest'
 
 const Guests = (props) => {
 
-    // state = {}
+  
 
     const handleDelete = (guest) => {
         // debugger;

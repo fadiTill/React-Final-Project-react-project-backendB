@@ -31,7 +31,7 @@ handleChange = (event) => {
 }
 handleSubmit = (event) => {
   event.preventDefault()
-    this.props.addGuest(this.state,this.props.house.id)
+  this.props.addGuest(this.state,this.props.house.id)
    this.setState ({
     name:'',
     phone_number:'',
@@ -53,10 +53,8 @@ render() {
       <option>now</option>
       <option>long term</option>
     </select>
-    <span> </span>
     <label>name:</label>
     <input type="string" name="name" value={this.state.name} onChange={this.handleChange}/>
-    <span> </span>
     <label>phone number:</label>
     <input type="string" name="phone_number" value={this.state.phone_number} onChange={this.handleChange}/>
     <label>address:</label>

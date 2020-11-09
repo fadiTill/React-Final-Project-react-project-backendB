@@ -27,7 +27,7 @@
  
 
 input[type=text], select, textarea {
-  width: 100%;
+  width: 10%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -36,11 +36,11 @@ input[type=text], select, textarea {
 
  label {
   padding: 6px 6px 6px 0;
-  display: inline-block;
+  display: inline-flex;
 } 
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #87CEFA;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -52,7 +52,43 @@ input[type=submit] {
 
   
     
+div.scrollmenu {
+  background-color:#4CAF50;
+  overflow: auto;
+  white-space: nowrap;
+}
 
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
 
+div.scrollmenu a:hover {
+  background-color: #00800B;
 
+}
+
+.vertical-menu {
+  width: 200px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+  background-color: #7FFFD4; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #4CAF50; /* Dark green background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  color: white;
+}
 

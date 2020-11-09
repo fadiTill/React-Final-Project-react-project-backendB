@@ -5,11 +5,11 @@ import House from './House'
 const Houses = (props) => {
 
     return (
-        <div> 
+      <div class="vertical-menu">
         {props.houses.map(house => 
-        <li key={house.id}>
+        <p key={house.id}>
         <Link to={`/houses/${house.id}`}>{house.house_address}</Link>
-        </li>)} 
+        </p>)} 
            </div>
              )
    

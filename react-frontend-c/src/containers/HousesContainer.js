@@ -5,7 +5,7 @@ import {fetchHouses } from '../actions/fetchHouses'
 import Houses from '../components/Houses'
 import House from '../components/House'
 import HouseInput from '../components/HouseInput'
-import NavBar from '../components/NavBar'
+import NavBarB from '../components/NavBarB'
 
 
 
@@ -20,7 +20,7 @@ render() {
 
     return (
     <div> 
-        <NavBar/>
+     <NavBarB/>
       <Switch>
       <Route path='/houses/new' component={HouseInput}/>
       <Route   path='/houses/:id'render={(routerProps)=> <House {...routerProps} houses={this.props.houses}/>}/>
