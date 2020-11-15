@@ -6,6 +6,7 @@ import GuestsContainer from '../containers/GuestsContainer'
 const House = (props) => {
 
    // let house = props.houses[props.match.params.id - 1]
+  //  does not mutate but rather creates a new array, 
    let house = props.houses.filter(house => house.id ==props.match.params.id)[0]
  console.log(house)
     return (

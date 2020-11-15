@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+React-Final-Project/react-project-backendB
 
-Things you may want to cover:
+Welcome to your new API ! In this directory, To experiment with that code, run rails s and run npm start for an interactive prompt.
 
-* Ruby version
+Installation:
+fork and clone this API 
+And then execute: $ bundle install
 
-* System dependencies
+cd into react-project-backendB and run rails s got to 'http://localhost:3000/houses'
 
-* Configuration
+cd into  react-frontend-c run the command form your console : npm install && npm start
 
-* Database creation
 
-* Database initialization
+How that work ?
+"This MVC will help you  save guests data for virtual open houses."
 
-* How to run the test suite
+first You can create new open house address.
+then you can create a guest, Read, Delete guest.
 
-* Services (job queues, cache servers, search engines, etc.)
+Contributing
+Bug reports and pull requests are welcome on GitHub at https://github.com/'. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
 
-* Deployment instructions
+License:
+The API is available as open source under the terms of the MIT License.
 
-* ...
+Code of Conduct:
+Everyone interacting in React-Final-Project/react-project-backendB codebases, issue trackers, chat rooms and mailing lists is expected to follow the code of conduct.
