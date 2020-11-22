@@ -1,7 +1,7 @@
 import React from 'react';
 import MyHeader from './components/MyHeader';
 import HousesContainer from './containers/HousesContainer'
-
+// import Button from './components/Button';
 
 class  App extends React.Component {
 
@@ -19,6 +19,7 @@ class  App extends React.Component {
   return (
     <div className="App">
       <header className="App-header">
+       
       <MyHeader/>
       </header>
       <HousesContainer/>

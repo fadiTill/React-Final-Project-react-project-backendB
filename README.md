@@ -1,5 +1,8 @@
 # README
 
+https://youtu.be/rPcKZsC6NbA
+
+
 React-Final-Project/react-project-backendB
 
 Welcome to your new API ! In this directory, To experiment with that code, run rails s and run npm start for an interactive prompt.
@@ -8,7 +11,7 @@ Installation:
 fork and clone this API 
 And then execute: $ bundle install
 
-cd into react-project-backendB and run rails s got to 'http://localhost:3000/houses'
+cd into react-project-backendB and run rails s got to 'http://localhost:3000/houses/api/v1'
 
 cd into  react-frontend-c run the command form your console : npm install && npm start
 
