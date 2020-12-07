@@ -11,6 +11,8 @@ const House = (props) => {
  console.log(house)
     return (
         <div>
+          <br></br>
+          <br></br>
         <h2> 
          {house ? house.house_address : null} 
           </h2>

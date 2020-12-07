@@ -21,7 +21,7 @@ let store = createStore(houseReducer, composeEnhancers(applyMiddleware(thunk)))
 ReactDOM.render(
     <Provider store={store}> 
     <Router>
-     <App />
+     <App/>
      </Router>
     </Provider>
 

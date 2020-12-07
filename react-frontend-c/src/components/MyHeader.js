@@ -1,17 +1,18 @@
 
-import React from 'react'
+// import React from 'react'
 
-const MyHeader = (props) => {
+// const MyHeader = (props) => {
     
-      return (
-        <div>
-        <header>
-        <h1 style={{color: "black"}}>Welcome to open House</h1>
-        </header>
-        </div>
-      );
-    }
+//       return (
+//         <div>
+//         <header >
+//           <br></br>
+//         <h1 class="split left"  style={{color: "black"}}> Open Houses</h1>
+//         </header>
+//         </div>
+//       );
+//     }
 
 
 
-  export default MyHeader
+//   export default MyHeader

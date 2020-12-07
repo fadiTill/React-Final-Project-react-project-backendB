@@ -2,8 +2,8 @@
   text-align: center;
 }
 .App-header {
-  background-color: #7FFFD4;
-  min-height: 30vh;
+  background-color: white;
+  min-height: 1vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@
 
  
 
-input[type=text], select, textarea {
+/* input[type=text], select, textarea {
   width: 10%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -47,13 +47,17 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   float: right;
+} */
+
+
+  img {
+  max-width: 100%;
+  height: auto;
 }
 
-
-  
     
 div.scrollmenu {
-  background-color:#4CAF50;
+  background-color: #6495ed;
   overflow: auto;
   white-space: nowrap;
 }
@@ -67,7 +71,7 @@ div.scrollmenu a {
 }
 
 div.scrollmenu a:hover {
-  background-color: #00800B;
+  background-color: black;
 
 }
 
@@ -76,19 +80,106 @@ div.scrollmenu a:hover {
 }
 
 .vertical-menu a {
-  background-color: #7FFFD4; /* Grey background color */
-  color: black; /* Black text color */
+  background-color: #6495ed; /*  background color */
+  color:white; /* Black text color */
   display: block; /* Make the links appear below each other */
   padding: 12px; /* Add some padding */
   text-decoration: none; /* Remove underline from links */
 }
 
 .vertical-menu a:hover {
-  background-color: #4CAF50; /* Dark green background on mouse-over */
+  background-color: black; /*  background on mouse-over */
 }
 
 .vertical-menu a.active {
-  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  background-color: #4CAF50; /* Add a  color to the "active/current" link */
   color: white;
 }
 
+
+ /* header {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example {
+  0%   {background-color:#6495ed; left:0px; top:0px;}
+  25%  {background-color:white; left:600px; top:0px;}
+  50%  {background-color:blue; left:600px; top:600px;}
+  75%  {background-color:white; left:0px; top:400px;}
+  100% {background-color:#6495ed; left:0px; top:0px;}
+}  */
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 1px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  
+
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: white;
+}
+
+/* Bottom right text
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+} */
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 1px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}

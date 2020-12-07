@@ -7,6 +7,7 @@ const NavBarB = (props) => {
     
         
         <div class="scrollmenu">
+          <h1> Open Houses App</h1>
        <Link to='/houses/new'> New House</Link>
        <Link to='/houses'> House index</Link>
     </div>

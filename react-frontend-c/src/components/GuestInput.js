@@ -55,17 +55,29 @@ render() {
       <option>long term</option>
     </select>
     <label>name:</label>
+    <br></br>
     <input type="string" name="name" value={this.state.name} onChange={this.handleChange}/>
+    <br></br>
+    <br></br>
     <label>phone number:</label>
+    <br></br>
     <input type="string" name="phone_number" value={this.state.phone_number} onChange={this.handleChange}/>
+    <br></br>
+    <br></br>
     <label>address:</label>
+    <br></br>
     <input type="string" name="guest_address" value={this.state.guest_address} onChange={this.handleChange}/>
+    <br></br>
+    <br></br>
     <label>email:</label>
+    <br></br>
     <input type="string" name="email" value={this.state.email} onChange={this.handleChange}/>
+    <br></br>
+    <br></br>
     <label>comment:</label>
+    <br></br>
     <input type="string" name="comment" value={this.state.comment} onChange={this.handleChange}/>
     <input type="submit"/>
-    
   </form>
 </div>
   )  

@@ -1,5 +1,6 @@
 import React from 'react';
-import MyHeader from './components/MyHeader';
+// import MyHeader from './components/MyHeader';
+import Photo from './components/Photo';
 import HousesContainer from './containers/HousesContainer'
 // import Button from './components/Button';
 
@@ -19,16 +20,16 @@ class  App extends React.Component {
   return (
     <div className="App">
       <header className="App-header">
-       
-      <MyHeader/>
-      </header>
       <HousesContainer/>
+      </header>
+      <br></br>
+      <Photo /> 
     </div>
   );
 }
 }
 
 
-
+{/* <img src="images/architecture-1836070_1920.jpg"></img> */}
 // export default connect()(App);
 export default App;
